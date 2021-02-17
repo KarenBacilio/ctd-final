@@ -1,4 +1,5 @@
 //JS file for my webpage
 console.log("It is connected correctly")
-var mykey = config.mykey;
-console.log(mykey)
+// document.addEventListener('DOMContentLoaded', () =>{
+//     alert("Welcome to the Treeist Website!")
+// })

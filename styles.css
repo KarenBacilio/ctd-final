@@ -1,0 +1,63 @@
+body{
+    background-color: #92aa5c;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+a:link{
+    color:rgb(150, 219, 161);
+}
+a:visited{
+    color:white;
+}
+
+nav{
+    background-color: black;
+    width: auto;
+    height: 5%;
+}
+
+#input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#weekData{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+#weekData th{
+    background-color: cadetblue;
+    text-align: center;
+}
+#weekData tr:nth-child(even){background-color: #f2f2f2;}
+#weedData tr:nth-child(odd){background-color: blanchedalmond;}
+#weekData tr:hover {background-color: #ddd;}
+
+.serviceOption{
+    font-weight: bold;
+    list-style: circle;
+    font-size: 20px;
+}
+
+.serviceDescription{
+    display: none;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.serviceOption:hover + .serviceDescription{
+    display: block;
+}

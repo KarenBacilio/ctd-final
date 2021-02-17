@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <title>Treeist About</title>
+    <link rel="stylesheet" href = "styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class = "navigation">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "about.html">About</a></li>
                 <li><a href = "services.html">Services</a></li>
@@ -14,8 +15,19 @@
             </ul>
         </nav>
     </header>
-    <h1>Today's Weather</h1>
-    <h2>Click our button below to find out if we might have to reschedule you this week!</h2>
-    <button type = "button">Check Weather</button>
+    <h1>The Treeist</h1>
+    <p>Welcome visitors! Click our button below to see what type of weather Chapel Hill is experiencing! Or you can type in a city of your choosing to see their local weather.
+        Click the button to see the weather for the next 7 days.
+    </p>
+    <h2>Today's Weather</h2>
+    <input type = "text" placeholder = "City Name" id = "city">
+    <button type ="button" id = "search">Search City</button>
+    <p id = 'input'></p>
+    <table id ='weekData'>
+        <tr id = "tableHeader"></tr>
+        <tbody id = "tableBody"></tbody>
+    </table>
+    <script src = "config.js"></script>
+    <script src = "schedule.js"></script>
 </body>
 </html>
