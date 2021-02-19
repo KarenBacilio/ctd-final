@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Treeist About</title>
+    <title>Scheduling</title>
     <link rel="stylesheet" href = "styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul class = "navigation">
+                <li class = "treeist-title">The Treeist</li>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "about.html">About</a></li>
                 <li><a href = "services.html">Services</a></li>
@@ -15,18 +16,26 @@
             </ul>
         </nav>
     </header>
-    <h1>The Treeist</h1>
-    <p>Welcome visitors! Click our button below to see what type of weather Chapel Hill is experiencing! Or you can type in a city of your choosing to see their local weather.
+    <h1>How's the Weather, Heather?</h1>
+    <p class = "generalParagraph">Welcome visitors! Click our button below to see what type of weather Chapel Hill is experiencing! Or you can type in a city of your choosing to see your local weather.
         Click the button to see the weather for the next 7 days.
     </p>
+    <p class = "generalParagraph">If you click the button to check for the weather, we also have a list of days that we might have to reschedule due to inclement weather.</p>
+    <p class = "generalParagraph">For issues, feedback, and reccomendations on how to improve our website, please send message to our email <b>contact@treeservice.com</b>.</p>
     <h2>Today's Weather</h2>
     <input type = "text" placeholder = "City Name" id = "city">
     <button type ="button" id = "search">Search City</button>
-    <p id = 'input'></p>
+    <p id = 'theirCity'></p>
     <table id ='weekData'>
-        <tr id = "tableHeader"></tr>
-        <tbody id = "tableBody"></tbody>
     </table>
+    <section id = "inclementAnnouncement">
+
+    </section>
+    <div class = "push"></div>
+    <footer>
+        <p class = "footer">Author: Karen Bacilio<br>
+        <a href="#">email@example.com</a></p>
+    </footer>
     <script src = "config.js"></script>
     <script src = "schedule.js"></script>
 </body>
