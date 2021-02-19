@@ -1,7 +1,30 @@
 body{
     background-color: #92aa5c;
 }
+#search{
+    color:rgb(240, 240, 240);
+    text-align: center;
+    background-color: #3e423e;
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+    width: 120px;
+    box-shadow:0 9px #999;
+}
+#search:hover{
+    background-color:#2c2e2c ;
+}
+#search:active{
+    background-color: #2c2e2c;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
 
+#city{
+    padding: 10px;
+    border-radius: 6px;
+    border:none;
+}
 .navigation {
     display: flex;
     flex-direction: row;
@@ -10,6 +33,12 @@ body{
     margin: 0;
     padding: 20px;
     font-size: 20px;
+}
+
+.treeist-title{
+    color:rgb(240, 240, 240);
+    font-size: 35px;
+    font: Georgia;
 }
 
 a:link{
@@ -25,10 +54,11 @@ nav{
     height: 5%;
 }
 
-#input{
+#theirCity{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding-bottom: 50px;
+    font-style: italic;
 }
 
 #weekData{
@@ -36,10 +66,13 @@ nav{
     margin-left: auto;
     margin-right: auto;
     width: auto;
+    background-color: blanchedalmond;
+    border: 1px solid black;
 }
 #weekData th{
-    background-color: cadetblue;
+    background-color: rgb(240, 240, 240);
     text-align: center;
+    border-bottom: 1px solid black;
 }
 #weekData tr:nth-child(even){background-color: #f2f2f2;}
 #weedData tr:nth-child(odd){background-color: blanchedalmond;}
@@ -49,6 +82,8 @@ nav{
     font-weight: bold;
     list-style: circle;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
 }
 
 .serviceDescription{
@@ -57,7 +92,36 @@ nav{
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 20px;
+    font-family: monospace;
 }
 .serviceOption:hover + .serviceDescription{
     display: block;
+}
+
+#inclementAnnouncement{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.generalParagraph{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 35px;
+    padding-right: 30px;
+}
+.push{
+    height: 350px;
+}
+.footer{
+    text-align: center;
+    background-color: sienna;
+}
+
+.funbutton{
+margin-left:150px;
+}
+
+h3{
+    padding-left: 10px;
 }
